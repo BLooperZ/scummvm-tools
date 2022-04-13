@@ -2019,7 +2019,7 @@ void next_line_HE_V100(char *output) {
 		ext(output, "hh|renameFile");
 		break;
 	case 0x66:
-		ext(output, "|stopObjectCode");
+		ext(output, "p|return");
 		break;
 	case 0x67:
 		ext(output, "p|localizeArrayToRoom");
@@ -3708,7 +3708,7 @@ void next_line_HE_V72(char *output) {
 				"\xCCv|nukeArray");
 		break;
 	case 0xBD:
-		ext(output, "|stopObjectCode");
+		ext(output, "p|return");
 		break;
 	case 0xBE:
 		// TODO: this loads another script which does something like
